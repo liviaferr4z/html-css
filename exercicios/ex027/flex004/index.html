@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexible Box</title>
-    <style>
+     <style>
         div.conteiner {
             background-color: lightsalmon;
-            flex-direction: row;
             display: flex;
-            flex-wrap: nowwrap;
-            /* pode usar o flex-flow para simplificar o direction e o wrap. */
+            height: 300px;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: flex-end;
         }
 
         div.item {
@@ -29,6 +30,5 @@
         <div class="item">Exemplo de D</div>
         <div class="item">Exemplo de E</div>
     </div>
-    
 </body>
 </html>
