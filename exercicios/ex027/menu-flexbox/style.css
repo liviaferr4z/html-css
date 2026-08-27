@@ -18,14 +18,37 @@ header {
     background-color: #ffdb99e7;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header > h1 {
-    border: 1px dotted black;
+    flex: 0 0 200px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.404);
 }
 
+header > nav > a {
+    background-color: rgb(236, 184, 86);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav > a:hover {
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+}
 nav {
-    border: 1px dotted black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
 main {
@@ -35,4 +58,5 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.315);
 }
+
 
